@@ -1,0 +1,53 @@
+@import 'fonts.css';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'pixel';
+}
+
+span:first-child {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: right;
+}
+
+span:nth-child(2) {
+    text-align: center;
+    align-self: center
+}
+
+span:last-child {
+    writing-mode: vertical-rl;
+    justify-self: flex-start;
+    text-orientation: upright;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+}
+
+p {
+    max-width: 300px;
+    margin: auto;
+}
+
+p::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+    color: blueviolet;
+    margin-right: 10px;
+}
